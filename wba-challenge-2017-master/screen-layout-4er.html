@@ -79,6 +79,28 @@
                         <li><button class="btn">Coming soon!</button></li>
                         <li><button class="btn">Coming soon!</button></li>
                     </ul>
+                        </div>
+                    <div class="story" id="story1">
+                        <table>
+                            <tr>
+                                <td><img src="../Images/play.svg" class="t2s"></td>
+                                <td><img src="../Images/pause.svg" class="t2s"></td>
+                                <td>Die lange Nacht</td>
+                                <td><img src="../Images/stop.svg" class="t2s"></td>
+                                <td><img src="../Images/repeat.svg" class="t2s"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">Ahh heute wieder Nachtschicht bei der Arbeit. Ich habe gar keine Lust mehr jede Nacht einfach zu sitzen und Däumchen zu drehen. Aber was tut man alles für Geld. Es ist nicht leicht als Student zu arbeiten und dann noch für die Klausuren zu lernen. Tja so ist das Leben nun mal, wenn man etwas erreichen will muss man auch etwas dafür tun, so sagte es jedenfalls mein Opa immer. Es ist kurz vor 11 Uhr. Ich denke eine Zigarettenpause kann man sich gönnen. Als ich draußen gerade meine Zigarette anzündete, hörte ich ein Schrei. Ich überlegte mir was ich tun soll:</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button class="btn">Nachsehen</button></td>
+                                <td><button class="btn">Ignorieren</button></td>
+                                <td><button class="btn">Hilfe rufen</button></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
 
                     <!-- Javascript ############################################-->
                     <script>
@@ -91,10 +113,14 @@
                             }
                         }
                         function alrtstart() {
+                            var xy = document.getElementById("menue");
+                            var yx = document.getElementById("story1");
                             alert("Warnung: Interactive storyteller ist am besten dafür geeignet in ruhigen Momenten ,wie an einer Ampel oder im Stau, oder durch einen Beifahrer benutzt zu werden. Wir wünschen ihnen viel Spaß bei der Geschichte!");
+                            xy.style.display="none";
+                            yx.style.display="block";
                         }
                     </script>
-                        </div>
+                        
                 </div>
             </section>
 

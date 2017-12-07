@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>TeslaAppKonzeptsite</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+ <style>
+body, html, .main {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+}
+</style>
+</head>
+
+<style>
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+<body>
+
+  <div id="navbar">
+    <nav>
+    <a href="#section1">Konzept</a>
+    <a href="#section2">Prototyp</a>
+    <a href="#section3">Dokumentation</a>
+    <a href="#section4">Team</a>
+    <a href="...">TESLA</a>
+  </nav>
+</div>
+
+<div>
+  <h2>Inovation</h2>
+  <p>Der eingebaute Touchscreen der Tesla Autos hat viele neue Appdesign Möglichkeiten auf den Markt gebracht</p>
+  <img src="insert.tesla.pic" alt="TESLAPAD" width="..." height="...">
+</div>
+
+
+<div class="main">
+  <section></section>
+</div>
+
+<div class="main" id="section1">
+  <section style="background-color:red">
+
+    <h1>Unser Konzept</h1>
+    <p>Wir vom NaZeN Entwicklerteam haben uns gedacht dass man während eines Staus sich eine Interaktive Geschichte anhören kann, damit man nicht seine Nerfen verliert</p>
+
+    <img src="insert.tesla.pic" alt="KONZEPTPHOTO1" width="..." height="...">
+    <img src="insert.tesla.pic" alt="KONZEPTPHOTO2" width="..." height="...">
+    <img src="insert.tesla.pic" alt="KONZEPTPHOTO3" width="..." height="...">
+
+</section>
+</div>
+
+<div class="main" id="section2">
+  <section style="background-color:blue">
+    <h3>Hier zu einserem Interactive Storyteller</h3>
+    <button>Prototyp</button>
+  </section>
+</div>
+
+<div class="main" id="section3">
+  <section style="background-color:green">
+    <h2>Dokumentation</h2>
+  </section>
+</div>
+
+<div class="main" id="section4">
+  <section style="background-color:yellow">
+<h2>Team</h2>
+  </section>
+</div>
+
+</body>
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</html>

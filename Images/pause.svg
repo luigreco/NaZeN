@@ -1,0 +1,17 @@
+<svg width="105" height="130" viewBox="0 0 105 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>pause</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-477 162)">
+<g id="pause">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(477 -162)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(547 -162)" fill="#333333"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 10C 0 4.47715 4.47715 0 10 0L 25 0C 30.5228 0 35 4.47715 35 10L 35 120C 35 125.523 30.5228 130 25 130L 10 130C 4.47715 130 0 125.523 0 120L 0 10Z"/>
+</defs>
+</svg>
