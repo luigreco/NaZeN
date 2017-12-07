@@ -99,6 +99,11 @@ body {
 #navbar a:hover {
     }
 
+#TESLA {
+      padding-right: 50px;
+      float: right;
+    }
+
 /* Page content */
 .content {
   padding: 16px;
@@ -115,6 +120,23 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
+
+h1,
+h2,
+h3,
+h4{
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+p{
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 
 /* helper
 -----------------------------------------------------------------------------*/
