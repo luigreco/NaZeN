@@ -58,10 +58,14 @@
 
 
                     <h4>Interactive Storyteller</h4>
-                    <p>Wählen sie nun eine Geschichte aus die sie interaktiv miterleben wollen.</p>
-                    <ul style="list-style-type:none">
+
+                    <p>Wählen sie nun eine Geschichte aus, die Sie interaktiv miterleben wollen.</p>
+
+                    <ul class="anders" style="list-style-type:none">
                         <li><button class="wbabtn" onclick="s1desc()">Die lange Nacht</button></li>
-                        <table class="tabled" id="s1desc">
+
+
+                        <table id="s1desc">
                                 <tr>
                                     <td><p>Autor: Eren Eryildiz</p></td>
                                     <td><p>Genre: Thriller</p></td>
@@ -76,6 +80,8 @@
                                     <td></td>
                                 </tr>
                         </table>
+
+
                         <li><button class="wbabtn">Coming soon!</button></li>
                         <li><button class="wbabtn">Coming soon!</button></li>
                     </ul>
@@ -93,13 +99,13 @@
 
 
                             <tr id=s1t>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1a);buttonreplace(s1t,sat)">Nachsehen</button></td>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1b);buttonreplace(s1t,sbt)">Ignorieren</button></td>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1c);buttonreplace(s1t,sct)">Hilfe rufen</button></td>
+                                <td><button class="wbabtn wahl1 ns" onclick="wahl(s1,s1a);buttonreplace(s1t,sat)">Nachsehen</button></td>
+                                <td><button class="wbabtn wahl1 ns" onclick="wahl(s1,s1b);buttonreplace(s1t,sbt)">Ignorieren</button></td>
+                                <td><button class="wbabtn wahl1 ns" onclick="wahl(s1,s1c);buttonreplace(s1t,sct)">Hilfe rufen</button></td>
                             </tr>
                             <tr id=sat>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1aa);buttonreplace(sat,nonid)">Die Flucht ergreifen</button></td>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1ab);buttonreplace(sat,nonid)">Dem Mann entgegentreten</button></td>
+                                <td><button class="wbabtn wahl1 ns2" onclick="wahl(s1,s1aa);buttonreplace(sat,nonid)">Die Flucht ergreifen</button></td>
+                                <td><button class="wbabtn wahl1 ns2" onclick="wahl(s1,s1ab);buttonreplace(sat,nonid)">Dem Mann entgegentreten</button></td>
                             </tr>
                             <tr id=sbt>
                                 <td><button class="wbabtn wahl1" onclick="wahl(s1,s1ba);buttonreplace(sbt,nonid)">Trotzdem Nachsehen</button></td>
@@ -110,8 +116,8 @@
                                 <td><button class="wbabtn wahl1" onclick="wahl(s1,s1ca);buttonreplace(sct,nonid)">Trotzdem die Lage checken</button></td>
                                 <td><button class="wbabtn wahl1" onclick="wahl(s1,s1cb);buttonreplace(sct,nonid)">auf die Polizei warten</button></td>
                             </tr>
-                            <tr id=nonid >
-                                <td><button class="wbabtn" onclick="reload()">Neue Geschichte</button></td>
+                            <tr id=nonid>
+                                <td></td>
                             </tr>
                         </table>
                     </div>
@@ -133,9 +139,6 @@
                             var worte = new SpeechSynthesisUtterance(a);
                             worte.lang = "de-DE";
                             window.speechSynthesis.speak(worte);
-                        }
-                        function reload() {
-                            location.reload(true);
                         }
                         function wahl(xy,yx) {
                             xy.innerHTML=yx.innerHTML;

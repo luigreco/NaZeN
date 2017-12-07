@@ -1,26 +1,82 @@
+
+#menue{
+align-items: center;
+ justify-content: center;
+
+}
+
+.anders {
+     width: 218px;
+     margin: 0 auto;
+     padding: 0;
+     margin-bottom: 15px;
+     margin-top: 15px;
+
+}
+
 h4 {
+font-family: 'Muli',sans-serif;
+color: DodgerBlue;
+font-size: 30px;
 text-align: center;
 }
 
 p {
+  font-size: 20px;
+  font-family: 'Roboto',sans-serif;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .wbabtn{
+
+color: black;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
 position: relative;
-left: 50px;
-background-color:#666666;
-font-family: sans-serif;
-border-radius: 19px;
-border-width: thin;
-margin-top: 3em;
+background-color:darkgray;
+box-shadow: 0 5px 5px #313131;
+font-family: 'Lato', sans-serif;
+border-radius: 10px;
+border-width: 1px;
 padding-top: 5px;
-padding-bottom: 5px;
+padding-bottom: 15px;
+width: 200px;
+height: 50px;
+font-size: 30px;
+margin-top: 10%;
 
 
 }
 
+.wbabtn2{
+
+color: black;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+position: relative;
+background-color:darkgray;
+box-shadow: 0 5px 5px #313131;
+font-family: 'Lato', sans-serif;
+border-radius: 100%;
+border-width: 1px;
+padding-top: 5px;
+padding-bottom: 15px;
+width: 200px;
+height: 50px;
+font-size: 30px;
+margin-top: 10%;
+
+
+}
+
+#s1desc{
+display: none;
+margin: 0 auto;
+
+}
 
 #s1{
   text-align: center;
@@ -36,17 +92,7 @@ padding-bottom: 5px;
   font-size: 30px;
 }
 
-.wbabtn {
-  left: 30px;
-  background-color:#666666;
-  font-family: sans-serif;
-  border-radius: 19px;
-  border-width: thin;
-  margin-top: 3em;
-  padding-top: 5px;
-  padding-bottom: 5px;
 
-}
 
 #s1t{
 position: relative;
@@ -55,12 +101,21 @@ padding-right: 250px;
 
 }
 
-.wahl1{
-padding-right: : 5%;
-background-color:#666666;
-font-family: sans-serif;
-border-radius: 19px;
-border-width: thin;
+.ns2{
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  background-color:#D9D9D9;
+  box-shadow: 0 5px 5px #313131;
+  font-family: 'Lato', sans-serif;
+  border-radius: 10px;
+  border-width: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
 
 
 }
