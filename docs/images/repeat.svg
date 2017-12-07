@@ -1,0 +1,17 @@
+<svg width="197" height="102" viewBox="0 0 197 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>repeat</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-769 149)">
+<g id="repeat">
+<g id="play">
+<use xlink:href="#path0_fill" transform="matrix(8.77702e-17 -1 1 8.77702e-17 758 -32)" fill="#333333"/>
+</g>
+<g id="play">
+<use xlink:href="#path0_fill" transform="matrix(8.77702e-17 -1 1 8.77702e-17 857 -32)" fill="#333333"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 57.1482 16.8418C 60.8957 9.71166 71.1043 9.71167 74.8518 16.8418L 115.457 94.0976C 118.956 100.756 114.127 108.75 106.605 108.75L 25.3953 108.75C 17.8727 108.75 13.0436 100.756 16.5435 94.0976L 57.1482 16.8418Z"/>
+</defs>
+</svg>
