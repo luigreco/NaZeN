@@ -4,19 +4,41 @@ text-align: center;
 
 p {
   text-align: center;
+  padding-top: 40px;
 }
 
-tr{
-  padding-top: 30px;
-}
 .wbabtn{
 position: relative;
-left: 80px
+left: 160px;
+background-color:#666666;
+font-family: Arial;
+border-radius: 19px;
+border-width: thin;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .story {
     display: none;
 }
+
 .t2s{
     height: 20px;
     width: 20px;
