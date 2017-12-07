@@ -136,6 +136,7 @@
                         }
                         function wahl(xy,yx) {
                             xy.innerHTML=yx.innerHTML;
+                            window.speechSynthesis.cancel();
                         }
                         function buttonreplace(a,b) {
                             a.style.display="none";
