@@ -15,6 +15,9 @@
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- Javascript -->
+    <script src="scripts/scripts.js"></script>
 </head>
 
 <body>
@@ -57,7 +60,17 @@
                     <h4>Interactive Storyteller</h4>
                     <p>Wählen sie nun eine Geschichte aus die sie interaktiv miterleben wollen.</p>
                     <ul style="list-style-type:none">
-                        <li><button class="btn">Die lange Nacht</button></li>
+                        <li><button class="btn" onclick="s1desc()">Die lange Nacht</button></li>
+                        <table id="s1desc">
+                                <tr>
+                                    <td><p>Autor: Eren Eryildiz</p></td>
+                                    <td><p>Genre: Thriller</p></td>
+                                    <td><p>FSK: 16</p></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><p>Beschreibung</p></td>
+                                </tr>
+                        </table>
                         <li><button class="btn">Coming soon!</button></li>
                         <li><button class="btn">Coming soon!</button></li>
                     </ul>
