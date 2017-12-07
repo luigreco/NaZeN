@@ -60,7 +60,7 @@
                     <h4>Interactive Storyteller</h4>
                     <p>Wählen sie nun eine Geschichte aus die sie interaktiv miterleben wollen.</p>
                     <ul style="list-style-type:none">
-                        <li><button class="btn" onclick="s1desc()">Die lange Nacht</button></li>
+                        <li><button class="wbabtn" onclick="s1desc()">Die lange Nacht</button></li>
                         <table id="s1desc">
                                 <tr>
                                     <td><p>Autor: Eren Eryildiz</p></td>
@@ -72,31 +72,31 @@
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td><button class="btn" onclick="alrtstart()">Geschichte starten</button></td>
+                                    <td><button class="wbabtn" onclick="alrtstart()">Geschichte starten</button></td>
                                     <td></td>
                                 </tr>
                         </table>
-                        <li><button class="btn">Coming soon!</button></li>
-                        <li><button class="btn">Coming soon!</button></li>
+                        <li><button class="wbabtn">Coming soon!</button></li>
+                        <li><button class="wbabtn">Coming soon!</button></li>
                     </ul>
                         </div>
                     <div class="story" id="story1">
                         <table>
                             <tr>
-                                <td><img src="../Images/play.svg" class="t2s"></td>
+                                <td><button onclick="vorlesen(document.getElementById('s1').innerHTML)"><img src="../Images/play.svg" class="t2s" ></button></td>
                                 <td><img src="../Images/pause.svg" class="t2s"></td>
                                 <td>Die lange Nacht</td>
                                 <td><img src="../Images/stop.svg" class="t2s"></td>
                                 <td><img src="../Images/repeat.svg" class="t2s"></td>
                             </tr>
                             <tr>
-                                <td colspan="5">Ahh heute wieder Nachtschicht bei der Arbeit. Ich habe gar keine Lust mehr jede Nacht einfach zu sitzen und Däumchen zu drehen. Aber was tut man alles für Geld. Es ist nicht leicht als Student zu arbeiten und dann noch für die Klausuren zu lernen. Tja so ist das Leben nun mal, wenn man etwas erreichen will muss man auch etwas dafür tun, so sagte es jedenfalls mein Opa immer. Es ist kurz vor 11 Uhr. Ich denke eine Zigarettenpause kann man sich gönnen. Als ich draußen gerade meine Zigarette anzündete, hörte ich ein Schrei. Ich überlegte mir was ich tun soll:</td>
+                                <td colspan="5" id="s1">Ahh heute wieder Nachtschicht bei der Arbeit. Ich habe gar keine Lust mehr jede Nacht einfach zu sitzen und Däumchen zu drehen. Aber was tut man alles für Geld. Es ist nicht leicht als Student zu arbeiten und dann noch für die Klausuren zu lernen. Tja so ist das Leben nun mal, wenn man etwas erreichen will muss man auch etwas dafür tun, so sagte es jedenfalls mein Opa immer. Es ist kurz vor 11 Uhr. Ich denke eine Zigarettenpause kann man sich gönnen. Als ich draußen gerade meine Zigarette anzündete, hörte ich ein Schrei. Ich überlegte mir was ich tun soll:</td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><button class="btn">Nachsehen</button></td>
-                                <td><button class="btn">Ignorieren</button></td>
-                                <td><button class="btn">Hilfe rufen</button></td>
+                                <td><button class="wbabtn">Nachsehen</button></td>
+                                <td><button class="wbabtn">Ignorieren</button></td>
+                                <td><button class="wbabtn">Hilfe rufen</button></td>
                                 <td></td>
                             </tr>
                         </table>
@@ -104,6 +104,11 @@
 
                     <!-- Javascript ############################################-->
                     <script>
+                        function vorlesen(a) {
+                            var worte = new SpeechSynthesisUtterance(a);
+                            worte.lang = "de-DE";
+                            window.speechSynthesis.speak(worte);
+                        }
                         function s1desc() {
                             var xy = document.getElementById("s1desc");
                             if (xy.style.display=="block") {
