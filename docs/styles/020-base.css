@@ -71,6 +71,7 @@ section {
     min-height: 100%;
 }
 
+
 /* Style the navbar */
 #navbar {
   border-radius: 0px 0px 20px 20px;
@@ -98,6 +99,7 @@ section {
 
 
 #navbar a:hover {
+  color: #d78195;
     }
 
 #TESLA {
@@ -122,6 +124,10 @@ section {
   padding-top: 60px;
 }
 
+section.Inovation{
+  hight:1000px;
+  background-image: url("//images/Touch.jpg");;
+}
 
 #Konzept{
   padding-top: 3%;
