@@ -93,22 +93,26 @@
 
 
                             <tr id=s1t>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1a)">Nachsehen</button></td>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1b)">Ignorieren</button></td>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1c)">Hilfe rufen</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1a);buttonreplace(s1t,sat)">Nachsehen</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1b);buttonreplace(s1t,sbt)">Ignorieren</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1c);buttonreplace(s1t,sct)">Hilfe rufen</button></td>
                             </tr>
                             <tr id=sat>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1a,s1aa)">Nachsehen</button></td>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1a,s1ab)">Ignorieren</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1aa);buttonreplace(sat,nonid)">Die Flucht ergreifen</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1ab);buttonreplace(sat,nonid)">Dem Mann entgegentreten</button></td>
                             </tr>
                             <tr id=sbt>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1b,s1ba)">Nachsehen</button></td>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1b,s1bb)">Ignorieren</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1ba);buttonreplace(sbt,nonid)">Trotzdem Nachsehen</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1bb);buttonreplace(sbt,nonid)">Wieder zur Arbeit gehen</button></td>
 
                             </tr>
                             <tr id=sct>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1c,s1ca)">Nachsehen</button></td>
-                                <td><button class="wbabtn wahl1" onclick="wahl(s1c,s1cb)">Ignorieren</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1ca);buttonreplace(sct,nonid)">Trotzdem die Lage checken</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1cb);buttonreplace(sct,nonid)">auf die Polizei warten</button></td>
+                            </tr>
+                            <tr id=nonid>
+                                <td></td>
+                            </tr>
                         </table>
                     </div>
                     <div class="storyrest">
@@ -132,6 +136,10 @@
                         }
                         function wahl(xy,yx) {
                             xy.innerHTML=yx.innerHTML;
+                        }
+                        function buttonreplace(a,b) {
+                            a.style.display="none";
+                            b.style.display="block";
                         }
                         function stop() {
                             window.speechSynthesis.cancel();
