@@ -61,7 +61,7 @@
                     <p>Wählen sie nun eine Geschichte aus die sie interaktiv miterleben wollen.</p>
                     <ul style="list-style-type:none">
                         <li><button class="wbabtn" onclick="s1desc()">Die lange Nacht</button></li>
-                        <table id="s1desc">
+                        <table class="tabled" id="s1desc">
                                 <tr>
                                     <td><p>Autor: Eren Eryildiz</p></td>
                                     <td><p>Genre: Thriller</p></td>
@@ -110,8 +110,8 @@
                                 <td><button class="wbabtn wahl1" onclick="wahl(s1,s1ca);buttonreplace(sct,nonid)">Trotzdem die Lage checken</button></td>
                                 <td><button class="wbabtn wahl1" onclick="wahl(s1,s1cb);buttonreplace(sct,nonid)">auf die Polizei warten</button></td>
                             </tr>
-                            <tr id=nonid>
-                                <td></td>
+                            <tr id=nonid >
+                                <td><button class="wbabtn" onclick="reload()">Neue Geschichte</button></td>
                             </tr>
                         </table>
                     </div>
@@ -133,6 +133,9 @@
                             var worte = new SpeechSynthesisUtterance(a);
                             worte.lang = "de-DE";
                             window.speechSynthesis.speak(worte);
+                        }
+                        function reload() {
+                            location.reload(true);
                         }
                         function wahl(xy,yx) {
                             xy.innerHTML=yx.innerHTML;
