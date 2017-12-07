@@ -1,0 +1,12 @@
+<svg width="102" height="103" viewBox="0 0 102 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>stop</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-629 148)">
+<g id="stop">
+<use xlink:href="#path0_fill" transform="translate(629 -148)" fill="#333333"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 10C 0 4.47715 4.47715 0 10 0L 92 0C 97.5228 0 102 4.47715 102 10L 102 93C 102 98.5228 97.5228 103 92 103L 10 103C 4.47715 103 0 98.5228 0 93L 0 10Z"/>
+</defs>
+</svg>
