@@ -268,17 +268,20 @@ h4{
   font-family: 'Lato', sans-serif;
   color: black;
   text-align: left;
+
 }
 div.box{
   width: 90%;
-  color: black;
+  color: white;
   margin: 50px;
   background-color: black;
   border: 1px solid black;
   opacity: 0.6;
   filter: alpha(opacity=50);
 }
-
+#inova{
+  color: white;
+}
 p{
   font-family: 'Roboto Slab', sans-serif;
   font-size: 16px;
