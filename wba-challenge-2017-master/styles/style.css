@@ -1,3 +1,10 @@
 #s1desc {
     display: none;
 }
+.story {
+    display: none;
+}
+.t2s {
+    height: 30px;
+    width: 30px;
+}
