@@ -1,10 +1,30 @@
-#s1desc {
-    display: none;
+h4 {
+text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+tr{
+  padding-top: 30px;
+}
+.wbabtn{
+position: relative;
+left: 80px
+
 }
 .story {
     display: none;
 }
-.t2s {
-    height: 30px;
-    width: 30px;
+.t2s{
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+#s1desc {
+    display: none;
 }
