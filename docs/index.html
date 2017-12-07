@@ -18,39 +18,41 @@
     <link rel="stylesheet" href="styles/030-typography.css">
     <link rel="stylesheet" href="styles/040-layout.css">
     <link rel="stylesheet" href="styles/050-components.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+
+          // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+            // Prevent default anchor click behavior
+              event.preventDefault();
+
+            // Store hash
+              var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+              scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+  </script>
 </head>
 
 
 <body>
 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-       <script>
-         $(document).ready(function(){
 
-           // Add smooth scrolling to all links
-               $("a").on('click', function(event) {
-
-             // Make sure this.hash has a value before overriding default behavior
-               if (this.hash !== "") {
-             // Prevent default anchor click behavior
-               event.preventDefault();
-
-             // Store hash
-               var hash = this.hash;
-
-             // Using jQuery's animate() method to add smooth page scroll
-             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-               $('html, body').animate({
-               scrollTop: $(hash).offset().top
-               }, 800, function(){
-
-             // Add hash (#) to URL when done scrolling (default click behavior)
-               window.location.hash = hash;
-               });
-             } // End if
-           });
-         });
-   </script>
 
 
     <main>
@@ -69,8 +71,8 @@
     <section>
     <div class="container">
   <img src="images\Touch.jpg" alt="touchpad" style="width:100%;" "height:auto;">
-  <div class="top-left"><h1 color="white">Innovation</h1>
-<div class="box"> <p>dgrrdfhgdfh </p></div>
+  <div class="top-right"><h1>Innovation</h1>
+<div class="box"> <p> <big>Seitdem Teslaautos neben ihrem Lenkrad einen Touchscreen besitzen, haben sich viele Möglichkeiten für Softwareentwicklung entwickelt!</big> </p></div>
   </div>
 </div>
   </section>
@@ -104,6 +106,7 @@
     <div class="main" id="Team">
       <section style="background-color:white">
     <h4>Team</h4>
+    <div id="apoub">
     <table style="width:auto">
   <tr>
     <th>Photo</th>
@@ -117,26 +120,26 @@
   </tr>
   <tr>
     <td></td>
-    <td></td>
+    <td>Marina</td>
 
   </tr>
 
   <tr>
     <td></td>
-    <td></td>
+    <td>Dennis</td>
 
   </tr>
 
   <tr>
     <td></td>
-    <td></td>
+    <td>Eren</td>
 
   </tr>
 
 </table>
       </section>
     </div>
-
+</div>
 
 
 
@@ -150,5 +153,23 @@
     </footer>
 
 </body>
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </html>
