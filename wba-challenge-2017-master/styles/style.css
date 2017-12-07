@@ -9,7 +9,7 @@ p {
 
 .wbabtn{
 position: relative;
-left: 160px;
+left: 250px;
 background-color:#666666;
 font-family: Arial;
 border-radius: 19px;
@@ -21,8 +21,35 @@ padding-bottom: 5px;
 
 }
 
+.wbabtn wahl1{
+
+  position:relative;
+  left: 40px;
+}
+
+.t2s{
+position: relative;
+left: 1px;
+background-color: #666666;
+}
+
 .storyrest {
     display: none;
+}
+
+
+.wbabtn2{
+
+  position: relative;
+  right: : 240px;
+  background-color: #666666;
+  font-family: Arial;
+  border-radius: 19px;
+  border-width: thin;
+  margin-top: 3em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
 }
 
 
