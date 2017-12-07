@@ -99,6 +99,11 @@ body {
 #navbar a:hover {
     }
 
+#TESLA {
+      padding-right: 50px;
+      float: right;
+    }
+
 /* Page content */
 .content {
   padding: 16px;
