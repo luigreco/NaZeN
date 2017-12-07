@@ -66,11 +66,48 @@ body, html, .main {
     height: 100%;
 }
 
+<<<<<<< HEAD
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 282px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 25%;
+    right: 16px;
+}
+=======
+>>>>>>> 82529c434e59732612177e2233e308bdf2ae9331
 
 /* Centered text */
 .centered {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -220,10 +257,25 @@ h2,
 h3,
 h4{
   padding-left: 50px;
+<<<<<<< HEAD
+ font-size: 45px;
+ text-shadow: 5px 0px 0px #f3d9df;
+ text-align: center;
+ -moz-animation-duration: 5s;
+ -webkit-animation-duration: 5s;
+ -moz-animation-name: slidein;
+ -webkit-animation-name: slidein;
+ -moz-animation-iteration-count: infinite;
+ -webkit-animation-iteration-count: infinite;
+ -moz-animation-direction: alternate;
+ -webkit-animation-direction: alternate;
+}
+=======
   font-size: 50px;
   font-family: 'Lato', sans-serif;
   color: black;
   text-align: left;
+>>>>>>> 82529c434e59732612177e2233e308bdf2ae9331
 
 }
 div.box{
