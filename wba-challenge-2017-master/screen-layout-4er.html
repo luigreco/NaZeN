@@ -12,10 +12,10 @@
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
-    
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
-    
+
 </head>
 
 <body>
@@ -83,23 +83,48 @@
                     <div class="story" id="story1">
                         <table>
                             <tr>
-                                <td><button onclick="vorlesen(document.getElementById('s1').innerHTML)"><img src="../Images/play.svg" class="t2s" ></button></td>
-                                <td><button onclick="pause()"><img src="../Images/pause.svg" class="t2s"></button></td>
-                                <td>Die lange Nacht</td>
-                                <td><button onclick="stop()"><img src="../Images/stop.svg" class="t2s"></button></td>
-                                <td><button onclick="rewind()"><img src="../Images/repeat.svg" class="t2s"></button></td>
+                                <td><button class="wbabtn2" onclick="vorlesen(document.getElementById('s1').innerHTML)"><img src="../Images/play.svg" class="t2s" ></button></td>
+                                <td id="titel">Die lange Nacht</td>
+                                <td><button class="wbabtn2" onclick="stop()"><img src="../Images/stop.svg" class="t2s"></button></td>
                             </tr>
                             <tr>
-                                <td colspan="5" id="s1">Ahh heute wieder Nachtschicht bei der Arbeit. Ich habe gar keine Lust mehr jede Nacht einfach zu sitzen und Däumchen zu drehen. Aber was tut man alles für Geld. Es ist nicht leicht als Student zu arbeiten und dann noch für die Klausuren zu lernen. Tja so ist das Leben nun mal, wenn man etwas erreichen will muss man auch etwas dafür tun, so sagte es jedenfalls mein Opa immer. Es ist kurz vor 11 Uhr. Ich denke eine Zigarettenpause kann man sich gönnen. Als ich draußen gerade meine Zigarette anzündete, hörte ich ein Schrei. Ich überlegte mir was ich tun soll:</td>
+                                <td colspan="3" ><p id="s1">Ahh heute wieder Nachtschicht bei der Arbeit. Ich habe gar keine Lust mehr jede Nacht einfach zu sitzen und Däumchen zu drehen. Aber was tut man alles für Geld. Es ist nicht leicht als Student zu arbeiten und dann noch für die Klausuren zu lernen. Tja so ist das Leben nun mal, wenn man etwas erreichen will muss man auch etwas dafür tun, so sagte es jedenfalls mein Opa immer. Es ist kurz vor 11 Uhr. Ich denke eine Zigarettenpause kann man sich gönnen. Als ich draußen gerade meine Zigarette anzündete, hörte ich einen Schrei. Ich überlegte mir was ich tun soll:</p></td>
                             </tr>
-                            <tr>
-                                <td></td>
-                                <td><button class="wbabtn">Nachsehen</button></td>
-                                <td><button class="wbabtn">Ignorieren</button></td>
-                                <td><button class="wbabtn">Hilfe rufen</button></td>
+
+
+                            <tr id=s1t>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1a);buttonreplace(s1t,sat)">Nachsehen</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1b);buttonreplace(s1t,sbt)">Ignorieren</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1c);buttonreplace(s1t,sct)">Hilfe rufen</button></td>
+                            </tr>
+                            <tr id=sat>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1aa);buttonreplace(sat,nonid)">Die Flucht ergreifen</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1ab);buttonreplace(sat,nonid)">Dem Mann entgegentreten</button></td>
+                            </tr>
+                            <tr id=sbt>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1ba);buttonreplace(sbt,nonid)">Trotzdem Nachsehen</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1bb);buttonreplace(sbt,nonid)">Wieder zur Arbeit gehen</button></td>
+
+                            </tr>
+                            <tr id=sct>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1ca);buttonreplace(sct,nonid)">Trotzdem die Lage checken</button></td>
+                                <td><button class="wbabtn wahl1" onclick="wahl(s1,s1cb);buttonreplace(sct,nonid)">auf die Polizei warten</button></td>
+                            </tr>
+                            <tr id=nonid>
                                 <td></td>
                             </tr>
                         </table>
+                    </div>
+                    <div class="storyrest">
+                        <p id="s1a">Ich entschied mich nachzusehen von wo der Schrei kam. Das Geschreie kam aber immer intensiver und lauter. Das Ganze kam von einer dunkeln Gasse. Als ich hinsah konnte ich meinen Augen nicht trauen. Ein groß gebauter Mann mit einer weißen Maske die voll mit Blut übersehen war, hatte gerade mit einer dicken Machte enthauptet. Mich überströmte die Angst. Was soll ich machen!?</p>
+                        <p id="s1b">Ich ignorierte den Schrei einfach, da es mich nichts anging was dort passierte. Aber dennoch kam mir der Gedanke ob ich doch mal nachsehen sollte.</p>
+                        <p id="s1c">Nun gut in solchen Situationen sollte man am besten Hilfe rufen. Das tat ich auch und rief die Polizei an. Ich erläuterte ihnen alles und wartete darauf bis sie kamen. Aber sollte ich nicht doch lieber hingehen und nachsehen?</p>
+                        <p id="s1aa">OK…. Ich ergreife die Flucht sonst bin ich der nächste der seinen Kopf verliert. Ich rannte so schnell ich konnte um nicht zu enden wie der andere Kerl. In der gleichen Nacht rief ich die Polizei an und teilte ihnen mit was passiert ist. Die Polizei kam schnell an aber am „Tatort“ war nicht mal eine einzige Spur von ihm oder seiner Tat.</p>
+                        <p id="s1ab">Ich war nicht der mutigste auch wenn er Furchteinflößend aussieht, konnte ich nicht einfach  tatenlos zusehen. Also rief ich zu ihm was das sein sollte und ich die Polizei rufen würde. Er gab kein Ton von sich und holte mit der Machte aus und trennte mein Arm ab. Bis ich reagierte war es schon zu spät und ich war tot.</p>
+                        <p id="s1ba">Also gut. Ich gehe trotzdem nachsehen was los ist. Ich sah einen großen Mann mit einer Maske am Gesicht und einer Machete in der Hand. Vor ihm war ein Mann der verzweifelt nach Hilfe rief. Aber er sah mich und ohne reagieren zu können erwischte es mich. </p>
+                        <p id="s1bb">Also ich gehe wieder zur Arbeit und vergesse die ganze Sache. Es gibt keinen Grund für mich sich in Gefahr zu bringen. </p>
+                        <p id="s1ca">Ich konnte nicht warten bis die Polizei kommt und ging schonmal selbst zur dunkeln Gasse. Ich schlich mich vorsichtig heran und sah einen großen Mann mit einer Maske, der eine Machete in der Hand hielt. Das schreckte mich nicht ab. Er hatte vor einen anderen Menschen zu verletzten bis ich meinen Mut ergriff und ihn von hinten seine Machete abnahm. Der Täter war überrascht und versuchte zu flüchten aber ohne Erfolg, denn die Polizei hatten ihn geschnappt.</p>
+                        <p id="s1cb">Am besten ist es auf die Polizei zu warten. Ich will mich nicht unnötig in Gefahr bringen, da es mich sonst auch erwischen könnte. Als ich diesen Gedanken hatte und mich kurz umdrehte stand ein riesiger Mann mit einer Maske vor mir mit einem abgetrennten Kopf in der Hand. Er warf den Kopf vor meine Füße. Bevor ich überhaupt reagieren konnte, schlug er mit der Machete auf mich ein, sodass meine Schulte komplett aufgespaltet war. </p>
                     </div>
 
                     <!-- Javascript ############################################-->
@@ -107,23 +132,17 @@
                         function vorlesen(a) {
                             var worte = new SpeechSynthesisUtterance(a);
                             worte.lang = "de-DE";
-                            if (window.speechSynthesis.paused=="true") {
-                                window.speechSynthesis.resume();
-                            } else {
                             window.speechSynthesis.speak(worte);
-                            }
                         }
-                        function pause() {
-                            window.speechSynthesis.pause();
+                        function wahl(xy,yx) {
+                            xy.innerHTML=yx.innerHTML;
+                        }
+                        function buttonreplace(a,b) {
+                            a.style.display="none";
+                            b.style.display="block";
                         }
                         function stop() {
                             window.speechSynthesis.cancel();
-                        }
-                        function rewind(a) {
-                            window.speechSynthesis.cancel();
-                            var worte = new SpeechSynthesisUtterance(a);
-                            worte.lang = "de-DE";
-                            window.speechSynthesis.speak(worte);
                         }
                         function s1desc() {
                             var xy = document.getElementById("s1desc");
@@ -141,7 +160,7 @@
                             yx.style.display="block";
                         }
                     </script>
-                        
+
                 </div>
             </section>
 
@@ -211,7 +230,7 @@
 
     <!-- Verschiedene Layouts via Query String -->
     <script src="scripts/tesla-layout-switch.js"></script>
-    
+
     <!-- Verschiedene Layouts via Query String -->
     <script src="scripts/tesla-main-control.js"#></script>
 
