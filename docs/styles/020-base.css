@@ -66,40 +66,6 @@ body, html, .main {
     height: 100%;
 }
 
-/* Container holding the image and the text */
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-/* Bottom left text */
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-}
-
-/* Top left text */
-.top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-
-/* Top right text */
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-
-/* Bottom right text */
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-}
 
 /* Centered text */
 .centered {
@@ -167,9 +133,29 @@ section {
 }
 
 section.Inovation{
-  hight:1000px;
-  background-image: url("//images/Touch.jpg");;
 }
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
 
 #Konzept{
   padding-top: 3%;
@@ -232,17 +218,16 @@ h2,
 h3,
 h4{
   font-family: 'Lato', sans-serif;
-  font-size: 30px;
   padding-left: 50px;
- font-size: 30px;
- text-shadow: 5px 0px 0px #f3d9df;
- text-align: center;
- -moz-animation-duration: 5s;
- -webkit-animation-duration: 5s;
- -moz-animation-name: slidein;
- -webkit-animation-name: slidein;
- -moz-animation-iteration-count: infinite;
- -webkit-animation-iteration-count: infinite;
+  font-size: 50px;
+  text-shadow: 5px 0px 0px #f3d9df;
+  text-align: center;
+  -moz-animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -moz-animation-name: slidein;
+  -webkit-animation-name: slidein;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
  -moz-animation-direction: alternate;
  -webkit-animation-direction: alternate;
 }
@@ -252,7 +237,7 @@ h2,
 h3,
 h4{
  text-shadow: 3px 0px 0px #f3d9df;
- margin-left: 100px;
+ margin-left: 50px;
  text-align: left;
 }
 
@@ -298,6 +283,14 @@ h4{
      }
    }
 
+div.box{
+  color: white;
+  margin: 15px;
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
 
 p{
   font-family: 'Roboto Slab', sans-serif;
