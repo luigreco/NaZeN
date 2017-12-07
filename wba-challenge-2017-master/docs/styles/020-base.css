@@ -62,13 +62,13 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
 /* Basic Styles
 -----------------------------------------------------------------------------*/
+body, html, .main {
+    height: 100%;
+}
 
-html,
-body {
-    font-family: var(--fontfamily);
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--color-text);
+
+section {
+    min-height: 100%;
 }
 
 /* Style the navbar */
@@ -96,7 +96,13 @@ body {
   font-kerning: auto;
 }
 
+
 #navbar a:hover {
+    }
+
+#TESLA {
+      padding-right: 50px;
+      float: right;
     }
 
 /* Page content */
@@ -115,6 +121,79 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
+
+
+#Konzept{
+  padding-top: 3%;
+}
+
+#Prototyp{
+  padding-top: 3%;
+}
+
+button{
+  background:#d9d9d9;
+  color:black;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color: #78B1FC;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #78B1FC;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+#Dokumentation{
+  padding-top: 3%;
+}
+
+#Team{
+  padding-top: 3%;
+}
+
+h1,
+h2,
+h3,
+h4{
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+p{
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 
 /* helper
 -----------------------------------------------------------------------------*/
