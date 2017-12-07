@@ -35,8 +35,7 @@ padding-bottom: 5px;
   font-size: 30px;
 }
 
-.wbabtnwahl1r{
-  position:relative;
+.wbabtn {
   left: 30px;
   background-color:#666666;
   font-family: sans-serif;
@@ -45,17 +44,35 @@ padding-bottom: 5px;
   margin-top: 3em;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin:0 auto;
+
 }
 
-.wbabtnwahl1m{
+#s1t{
 position: relative;
-}
-
-.wbabtnwahl1l{
-position: relative;
+font-family: sans-serif;
+padding-right: 250px;
 
 }
+
+.wahl1{
+padding-right: : 5%;
+background-color:#666666;
+font-family: sans-serif;
+border-radius: 19px;
+border-width: thin;
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -82,6 +99,11 @@ background-color: #666666;
   padding-top: 5px;
   padding-bottom: 5px;
 
+
+
+
+
+
 }
 #sat {
     display: none;
@@ -107,4 +129,8 @@ background-color: #666666;
 
 #s1desc {
     display: none;
+}
+
+#nonid{
+display: none;
 }
