@@ -179,7 +179,7 @@ button{
 }
 button:hover{
   background:#fff;
-  color: #f3d9df;
+  color: #d78195;
 }
 button:before,button:after{
   content:'';
@@ -221,6 +221,7 @@ h3,
 h4{
   padding-left: 50px;
   font-size: 50px;
+  font-family: 'Lato', sans-serif;
   color: black;
   text-align: left;
 
