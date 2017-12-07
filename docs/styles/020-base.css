@@ -66,7 +66,7 @@ body, html, .main {
     height: 100%;
 }
 
-<<<<<<< HEAD
+
 /* Container holding the image and the text */
 .container {
     position: relative;
@@ -101,8 +101,8 @@ body, html, .main {
     bottom: 25%;
     right: 16px;
 }
-=======
->>>>>>> 82529c434e59732612177e2233e308bdf2ae9331
+
+
 
 /* Centered text */
 .centered {
@@ -257,26 +257,12 @@ h2,
 h3,
 h4{
   padding-left: 50px;
-<<<<<<< HEAD
  font-size: 45px;
- text-shadow: 5px 0px 0px #f3d9df;
  text-align: center;
- -moz-animation-duration: 5s;
- -webkit-animation-duration: 5s;
- -moz-animation-name: slidein;
- -webkit-animation-name: slidein;
- -moz-animation-iteration-count: infinite;
- -webkit-animation-iteration-count: infinite;
- -moz-animation-direction: alternate;
- -webkit-animation-direction: alternate;
-}
-=======
   font-size: 50px;
   font-family: 'Lato', sans-serif;
   color: black;
   text-align: left;
->>>>>>> 82529c434e59732612177e2233e308bdf2ae9331
-
 }
 div.box{
   width: 90%;
