@@ -7,7 +7,12 @@ p {
 }
 
 tr{
-  text-align: right;
+  padding-top: 30px;
+}
+.btn{
+position: relative;
+left: 180px
+
 }
 
 
