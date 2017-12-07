@@ -35,7 +35,7 @@ padding-bottom: 5px;
   font-size: 30px;
 }
 
-.wbabtnwahl1{
+.wbabtnwahl1r{
   position:relative;
   left: 30px;
   background-color:#666666;
@@ -45,7 +45,19 @@ padding-bottom: 5px;
   margin-top: 3em;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin:0 auto;
 }
+
+.wbabtnwahl1m{
+position: relative;
+}
+
+.wbabtnwahl1l{
+position: relative;
+
+}
+
+
 
 .t2s{
 position: relative;
