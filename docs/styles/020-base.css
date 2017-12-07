@@ -137,7 +137,7 @@ section.Inovation{
 
 /* Container holding the image and the text */
 .container {
-    position: relative;
+    position:relative;
     text-align: left;
     color: white;
 }
@@ -213,42 +213,26 @@ button:hover:before,button:hover:after{
   padding-top: 3%;
 }
 
+
+
 h1,
 h2,
 h3,
 h4{
-  font-family: 'Lato', sans-serif;
   padding-left: 50px;
   font-size: 50px;
-  text-shadow: 5px 0px 0px #f3d9df;
-  text-align: center;
-  -moz-animation-duration: 5s;
-  -webkit-animation-duration: 5s;
-  -moz-animation-name: slidein;
-  -webkit-animation-name: slidein;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
- -moz-animation-direction: alternate;
- -webkit-animation-direction: alternate;
-}
+  color: black;
+  text-align: left;
 
-h1,
-h2,
-h3,
-h4{
- color: white;
- text-shadow: 2px 2px #f3d9df;
- padding-left: 50px;
- text-align: left;
 }
-
 div.box{
+  width: 90%;
   color: white;
-  margin: 15px;
+  margin: 50px;
   background-color: black;
   border: 1px solid black;
   opacity: 0.6;
-  filter: alpha(opacity=60);
+  filter: alpha(opacity=50);
 }
 
 p{
