@@ -71,24 +71,15 @@ background-color: #666666;
   padding-bottom: 5px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#sat {
+    display: none;
+}
+#sbt {
+    display: none;
+}
+#sct {
+    display: none;
+}
 
 .story {
     display: none;
