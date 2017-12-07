@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Konzeptsite für die Challenge</title>
+
+    <!-- Normalize and Resets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="lib/styles/main.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/010-resets.css">
+    <link rel="stylesheet" href="styles/020-base.css">
+    <link rel="stylesheet" href="styles/030-typography.css">
+    <link rel="stylesheet" href="styles/040-layout.css">
+    <link rel="stylesheet" href="styles/050-components.css">
+</head>
+
+
+<body>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script>
+         $(document).ready(function(){
+
+           // Add smooth scrolling to all links
+               $("a").on('click', function(event) {
+
+             // Make sure this.hash has a value before overriding default behavior
+               if (this.hash !== "") {
+             // Prevent default anchor click behavior
+               event.preventDefault();
+
+             // Store hash
+               var hash = this.hash;
+
+             // Using jQuery's animate() method to add smooth page scroll
+             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+               $('html, body').animate({
+               scrollTop: $(hash).offset().top
+               }, 800, function(){
+
+             // Add hash (#) to URL when done scrolling (default click behavior)
+               window.location.hash = hash;
+               });
+             } // End if
+           });
+         });
+   </script>
+
+
+    <main>
+
+   <img src="images/Header.jpeg">
+      <div id="navbar">
+        <nav>
+        <a href="#Konzept">Konzept</a>
+        <a href="#Prototyp">Prototyp</a>
+        <a href="#Dokumentation">Dokumentation</a>
+        <a href="#Team">Team</a>
+        <a id="TESLA" style="float:right" href="index.html"> <img src="images/TESLA.png"></a>
+      </nav>
+    </div>
+
+    <div>
+      <h1>Inovation</h1>
+      <p>Der eingebaute Touchscreen der Tesla Autos hat viele neue Appdesign Möglichkeiten auf den Markt gebracht</p>
+      <img src="insert.tesla.pic" alt="TESLAPAD" width="..." height="...">
+    </div>
+
+
+    <div class="main" id="Konzept">
+      <section style="background-color:white">
+
+        <h1>Das Konzept</h1>
+        <p>Wir vom NaZeN Entwicklerteam haben uns gedacht dass man während eines Staus sich eine Interaktive Geschichte anhören kann, damit man nicht seine Nerfen verliert</p>
+
+        <img src="insert.tesla.pic" alt="KONZEPTPHOTO1" width="..." height="...">
+        <img src="insert.tesla.pic" alt="KONZEPTPHOTO2" width="..." height="...">
+        <img src="insert.tesla.pic" alt="KONZEPTPHOTO3" width="..." height="...">
+
+    </section>
+    </div>
+
+    <div class="main" id="Prototyp">
+      <section style="background-color:white">
+        <h2>Interactive Storyteller</h2>
+        <p>
+
+        <button>zum Prototyp</button>
+
+      </p>
+      </section>
+    </div>
+
+    <div class="main" id="Dokumentation">
+      <section style="background-color:white">
+        <h3>Dokumentation</h3>
+        <p>
+        </p>
+      </section>
+    </div>
+
+    <div class="main" id="Team">
+      <section style="background-color:white">
+    <h4>Team</h4>
+    <p>
+    </p>
+      </section>
+    </div>
+
+
+
+
+    <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+    </main>
+
+    <footer class="footer">
+        <section class="section content">
+            <p>Ich bin ein Footer.</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+/*-----------------------------------------------------------------------------
+base.css
+Enthält alle CSS Variabeln und grundlegende Regeln sowie zentrale helper.
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* Variables
+-----------------------------------------------------------------------------*/
+
+:root {
+    /*
+    Farben
+    ----------------------------------------*/
+    --color-brand: rgb(183, 68, 44);
+    --color-text: #000;
+    --color-headlines: #666;
+    --color-borders: rgba(0, 0, 0, 0.3);
+    /*
+    Abstände. Hierzu gibt es auch ein schönes Konzept
+    https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62 */
+    --content-width: 960px;
+    /*
+    Innenabstände umlaufend, z.B. für Buttons.
+    ----------------------------------------*/
+    --space-inset: 1rem;
+    --space-inset-s: 0.5rem;
+    --space-inset-l: 1.5rem;
+    /*
+    Vertikale Abstände von Stapeln, also
+    Elementen, die untereinander angeordnet
+    werden.
+    ----------------------------------------*/
+    --space-stack: 1rem;
+    --space-stack-xs: 0.25rem;
+    --space-stack-s: 0.5rem;
+    --space-stack-l: 1.5rem;
+    --space-stack-xl: 2rem;
+    --space-stack-xxl: 4rem;
+    /*
+    Horizontale Abstände von Reihen, also
+    Elementen, die nebeneinander angeordnet
+    werden.
+    ----------------------------------------*/
+    --space-inline: 1rem;
+    --space-inline-xs: 0.25rem;
+    --space-inline-s: 0.5rem;
+    --space-inline-l: 1.5rem;
+    --space-inline-xl: 2rem;
+    /*
+    Schrift
+    ----------------------------------------*/
+    --fontfamily: "Helvetica Neue", Helvetica, sans-serif;
+    --fontsize: 1rem;
+    --fontsize-s: 0.75rem;
+    --fontsize-l: 1.5rem;
+    --fontsize-xl: 2rem;
+    --fontsize-xxl: 3rem;
+}
+
+
+/* Basic Styles
+-----------------------------------------------------------------------------*/
+body, html, .main {
+    height: 100%;
+}
+
+
+section {
+    min-height: 100%;
+}
+
+/* Style the navbar */
+#navbar {
+  border-radius: 0px 0px 20px 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #D9D9D9;
+  height: 50px;
+  width: 100%;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  text-align: center;
+  padding-top: 13px;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  font-kerning: auto;
+}
+
+
+#navbar a:hover {
+    }
+
+#TESLA {
+      padding-right: 50px;
+      float: right;
+    }
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+#Konzept{
+  padding-top: 3%;
+}
+
+#Prototyp{
+  padding-top: 3%;
+}
+
+button{
+  background:#d9d9d9;
+  color:black;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color: #f3d9df;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f3d9df;
+  font-family: 'Roboto Slab', serif;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+#Dokumentation{
+  padding-top: 3%;
+}
+
+#Team{
+  padding-top: 3%;
+}
+
+h1,
+h2,
+h3,
+h4{
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  padding-left: 50px;
+ font-size: 30px;
+ text-shadow: 5px 0px 0px #f3d9df;
+ text-align: center;
+ -moz-animation-duration: 5s;
+ -webkit-animation-duration: 5s;
+ -moz-animation-name: slidein;
+ -webkit-animation-name: slidein;
+ -moz-animation-iteration-count: infinite;
+ -webkit-animation-iteration-count: infinite;
+ -moz-animation-direction: alternate;
+ -webkit-animation-direction: alternate;
+}
+
+h1,
+h2,
+h3,
+h4{
+ text-shadow: 3px 0px 0px #f3d9df;
+ margin-left: 100px;
+ text-align: left;
+}
+
+/*CSS H1 Animation*/
+
+@-moz-keyframes slidein {
+     from {
+       margin-left:0%;
+     }
+
+     75% {
+       margin-right:25%;
+     }
+
+     to {
+       margin-left:50%;
+     }
+   }
+
+   @-webkit-keyframes slidein {
+     from {
+       text-shadow: 5px 15px #f3d9df;
+       margin-left: 5px;
+     }
+
+     25% {
+       text-shadow: 5px 0px 0px #f3d9df;
+       margin-left: 10px;
+
+     }
+
+     50% {
+       text-shadow: 20px 5px 0px #f3d9df;
+       margin-left: 20px;
+     }
+
+     75% {
+       margin-left: 25px;
+     }
+
+     to {
+       margin-left: 80px;
+     }
+   }
+
+
+p{
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+/* helper
+-----------------------------------------------------------------------------*/
+
+.hidden {
+    display: none !important;
+}
