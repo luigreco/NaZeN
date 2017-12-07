@@ -119,6 +119,7 @@ section {
 
 /* Style the navbar */
 #navbar {
+  z-index: 9999;
   border-radius: 0px 0px 20px 20px;
   margin: 0 auto;
   overflow: hidden;
@@ -250,6 +251,10 @@ button:hover:before,button:hover:after{
   padding-top: 3%;
 }
 
+#apoub{
+  color: black;
+}
+
 
 
 h1,
@@ -266,7 +271,7 @@ h4{
 }
 div.box{
   width: 90%;
-  color: white;
+  color: black;
   margin: 50px;
   background-color: black;
   border: 1px solid black;
