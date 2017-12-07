@@ -83,23 +83,30 @@
                     <div class="story" id="story1">
                         <table>
                             <tr>
-                                <td><button onclick="vorlesen(document.getElementById('s1').innerHTML)"><img src="../Images/play.svg" class="t2s" ></button></td>
-                                <td><button onclick="pause()"><img src="../Images/pause.svg" class="t2s"></button></td>
+                                <td><button class="wbabtn" onclick="vorlesen(document.getElementById('s1').innerHTML)"><img src="../Images/play.svg" class="t2s" ></button></td>
                                 <td>Die lange Nacht</td>
-                                <td><button onclick="stop()"><img src="../Images/stop.svg" class="t2s"></button></td>
-                                <td><button onclick="rewind()"><img src="../Images/repeat.svg" class="t2s"></button></td>
+                                <td><button class="wbabtn" onclick="stop()"><img src="../Images/stop.svg" class="t2s"></button></td>
                             </tr>
                             <tr>
-                                <td colspan="5" id="s1">Ahh heute wieder Nachtschicht bei der Arbeit. Ich habe gar keine Lust mehr jede Nacht einfach zu sitzen und Däumchen zu drehen. Aber was tut man alles für Geld. Es ist nicht leicht als Student zu arbeiten und dann noch für die Klausuren zu lernen. Tja so ist das Leben nun mal, wenn man etwas erreichen will muss man auch etwas dafür tun, so sagte es jedenfalls mein Opa immer. Es ist kurz vor 11 Uhr. Ich denke eine Zigarettenpause kann man sich gönnen. Als ich draußen gerade meine Zigarette anzündete, hörte ich ein Schrei. Ich überlegte mir was ich tun soll:</td>
+                                <td colspan="3" id="s1">Ahh heute wieder Nachtschicht bei der Arbeit. Ich habe gar keine Lust mehr jede Nacht einfach zu sitzen und Däumchen zu drehen. Aber was tut man alles für Geld. Es ist nicht leicht als Student zu arbeiten und dann noch für die Klausuren zu lernen. Tja so ist das Leben nun mal, wenn man etwas erreichen will muss man auch etwas dafür tun, so sagte es jedenfalls mein Opa immer. Es ist kurz vor 11 Uhr. Ich denke eine Zigarettenpause kann man sich gönnen. Als ich draußen gerade meine Zigarette anzündete, hörte ich einen Schrei. Ich überlegte mir was ich tun soll:</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td><button class="wbabtn">Nachsehen</button></td>
-                                <td><button class="wbabtn">Ignorieren</button></td>
-                                <td><button class="wbabtn">Hilfe rufen</button></td>
-                                <td></td>
+                                <td><button class="wbabtn wahl1">Nachsehen</button></td>
+                                <td><button class="wbabtn wahl1">Ignorieren</button></td>
+                                <td><button class="wbabtn wahl1">Hilfe rufen</button></td>
                             </tr>
                         </table>
+                    </div>
+                    <div class="storyrest">
+                        <p id="s1a"></p>
+                        <p id="s1b"></p>
+                        <p id="s1c"></p>
+                        <p id="s1aa"></p>
+                        <p id="s1ab"></p>
+                        <p id="s1ba"></p>
+                        <p id="s1bb"></p>
+                        <p id="s1ca"></p>
+                        <p id="s1cb"></p>
                     </div>
 
                     <!-- Javascript ############################################-->
@@ -107,23 +114,15 @@
                         function vorlesen(a) {
                             var worte = new SpeechSynthesisUtterance(a);
                             worte.lang = "de-DE";
-                            if (window.speechSynthesis.paused=="true") {
-                                window.speechSynthesis.resume();
-                            } else {
                             window.speechSynthesis.speak(worte);
-                            }
                         }
-                        function pause() {
-                            window.speechSynthesis.pause();
+                        function wahl(a,b) {
+                            var xy = document.getElementById(a).innerHTML;
+                            var yx = document.getElementById(b).innerHTML;
+                            xy=yx;
                         }
                         function stop() {
                             window.speechSynthesis.cancel();
-                        }
-                        function rewind(a) {
-                            window.speechSynthesis.cancel();
-                            var worte = new SpeechSynthesisUtterance(a);
-                            worte.lang = "de-DE";
-                            window.speechSynthesis.speak(worte);
                         }
                         function s1desc() {
                             var xy = document.getElementById("s1desc");
