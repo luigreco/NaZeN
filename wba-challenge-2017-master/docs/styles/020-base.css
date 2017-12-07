@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
-base.css                                                                  
-Enthält alle CSS Variabeln und grundlegende Regeln sowie zentrale helper. 
+base.css
+Enthält alle CSS Variabeln und grundlegende Regeln sowie zentrale helper.
 
 Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 ----------------------------------------------------------------------------*/
@@ -10,14 +10,14 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 -----------------------------------------------------------------------------*/
 
 :root {
-    /* 
+    /*
     Farben
     ----------------------------------------*/
     --color-brand: rgb(183, 68, 44);
     --color-text: #000;
     --color-headlines: #666;
     --color-borders: rgba(0, 0, 0, 0.3);
-    /* 
+    /*
     Abstände. Hierzu gibt es auch ein schönes Konzept
     https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62 */
     --content-width: 960px;
@@ -27,9 +27,9 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     --space-inset: 1rem;
     --space-inset-s: 0.5rem;
     --space-inset-l: 1.5rem;
-    /* 
+    /*
     Vertikale Abstände von Stapeln, also
-    Elementen, die untereinander angeordnet 
+    Elementen, die untereinander angeordnet
     werden.
     ----------------------------------------*/
     --space-stack: 1rem;
@@ -38,9 +38,9 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     --space-stack-l: 1.5rem;
     --space-stack-xl: 2rem;
     --space-stack-xxl: 4rem;
-    /* 
+    /*
     Horizontale Abstände von Reihen, also
-    Elementen, die nebeneinander angeordnet 
+    Elementen, die nebeneinander angeordnet
     werden.
     ----------------------------------------*/
     --space-inline: 1rem;
@@ -48,7 +48,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     --space-inline-s: 0.5rem;
     --space-inline-l: 1.5rem;
     --space-inline-xl: 2rem;
-    /* 
+    /*
     Schrift
     ----------------------------------------*/
     --fontfamily: "Helvetica Neue", Helvetica, sans-serif;
@@ -60,7 +60,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 }
 
 
-/* Basic Styles 
+/* Basic Styles
 -----------------------------------------------------------------------------*/
 
 html,
@@ -71,15 +71,52 @@ body {
     color: var(--color-text);
 }
 
-h1,
-h2,
-h3,
-h4 {
-    color: var(--color-headlines);
+/* Style the navbar */
+#navbar {
+  border-radius: 0px 0px 20px 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #D9D9D9;
+  height: 50px;
+  width: 100%;
 }
 
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  text-align: center;
+  padding-top: 13px;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  font-kerning: auto;
+}
 
-/* helper 
+#navbar a:hover {
+    }
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* helper
 -----------------------------------------------------------------------------*/
 
 .hidden {
