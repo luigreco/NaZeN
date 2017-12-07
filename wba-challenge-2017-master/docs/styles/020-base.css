@@ -62,13 +62,13 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
 /* Basic Styles
 -----------------------------------------------------------------------------*/
+body, html, .main {
+    height: 100%;
+}
 
-html,
-body {
-    font-family: var(--fontfamily);
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--color-text);
+
+section {
+    min-height: 100%;
 }
 
 /* Style the navbar */
@@ -96,6 +96,10 @@ body {
   font-kerning: auto;
 }
 
+img.Touch{
+  padding-bottom: 0%;
+}
+
 #navbar a:hover {
     }
 
@@ -119,6 +123,23 @@ body {
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
+}
+
+
+#Konzept{
+  padding-top: 3%;
+}
+
+#Prototyp{
+  padding-top: 3%;
+}
+
+#Dokumentation{
+  padding-top: 3%;
+}
+
+#Team{
+  padding-top: 3%;
 }
 
 h1,
